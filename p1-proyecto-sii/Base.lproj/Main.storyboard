@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,29 +17,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="edT-W6-AyS">
-                                <rect key="frame" x="213" y="247" width="175" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_oficial_gray" translatesAutoresizingMaskIntoConstraints="NO" id="x6r-Bc-hC1">
+                                <rect key="frame" x="225" y="225" width="150" height="150"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JKe-V3-p2D">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="BaA-ra-q0p"/>
+                                    <constraint firstAttribute="width" constant="150" id="NoB-BT-kqs"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="edT-W6-AyS">
                                 <rect key="frame" x="213" y="285" width="175" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jez-UG-Sb3">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JKe-V3-p2D">
+                                <rect key="frame" x="213" y="323" width="175" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jez-UG-Sb3">
                                 <rect key="frame" x="-6" y="20" width="606" height="66"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sistema Integral de Información" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p03-Un-THV">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sistema Integral de Información" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p03-Un-THV">
                                         <rect key="frame" x="23" y="8" width="560" height="21"/>
                                         <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="560" id="AHe-4G-iHp"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="0.9113581975599846" blue="0.37519522448660503" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instituto Tecnologico de Chihuahua II" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKM-22-jHs">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instituto Tecnologico de Chihuahua II" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKM-22-jHs">
                                         <rect key="frame" x="23" y="37" width="560" height="21"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -48,9 +60,34 @@
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="0.0018823732515929059" green="0.023973165416672992" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="p03-Un-THV" firstAttribute="top" secondItem="jez-UG-Sb3" secondAttribute="top" constant="8" id="1V3-U8-l99"/>
+                                    <constraint firstItem="p03-Un-THV" firstAttribute="leading" secondItem="jez-UG-Sb3" secondAttribute="leading" constant="23" id="2HX-fQ-pXI"/>
+                                    <constraint firstItem="p03-Un-THV" firstAttribute="trailing" secondItem="fKM-22-jHs" secondAttribute="trailing" id="2s6-Th-tal"/>
+                                    <constraint firstItem="p03-Un-THV" firstAttribute="leading" secondItem="jez-UG-Sb3" secondAttribute="leading" constant="23" id="35R-Gm-gOx"/>
+                                    <constraint firstItem="p03-Un-THV" firstAttribute="leading" secondItem="jez-UG-Sb3" secondAttribute="leading" constant="23" id="38W-Vg-XZC"/>
+                                    <constraint firstItem="fKM-22-jHs" firstAttribute="bottom" secondItem="jez-UG-Sb3" secondAttribute="bottomMargin" id="5Js-Pt-mqq"/>
+                                    <constraint firstItem="p03-Un-THV" firstAttribute="centerX" secondItem="jez-UG-Sb3" secondAttribute="centerX" id="93i-qh-Opv"/>
+                                    <constraint firstItem="fKM-22-jHs" firstAttribute="leading" secondItem="jez-UG-Sb3" secondAttribute="leading" constant="23" id="DyX-kf-ts4"/>
+                                    <constraint firstItem="p03-Un-THV" firstAttribute="leading" secondItem="fKM-22-jHs" secondAttribute="leading" id="EtI-DU-frZ"/>
+                                    <constraint firstItem="fKM-22-jHs" firstAttribute="leading" secondItem="jez-UG-Sb3" secondAttribute="leading" constant="23" id="INq-KV-Ngv"/>
+                                    <constraint firstItem="fKM-22-jHs" firstAttribute="top" secondItem="jez-UG-Sb3" secondAttribute="top" constant="37" id="JMQ-Mu-BZA"/>
+                                    <constraint firstItem="p03-Un-THV" firstAttribute="top" secondItem="jez-UG-Sb3" secondAttribute="top" constant="8" id="LsC-z5-7M3"/>
+                                    <constraint firstItem="fKM-22-jHs" firstAttribute="leading" secondItem="jez-UG-Sb3" secondAttribute="leading" constant="23" id="NPS-us-wI2"/>
+                                    <constraint firstItem="p03-Un-THV" firstAttribute="centerX" secondItem="fKM-22-jHs" secondAttribute="centerX" id="Vez-RI-bLn"/>
+                                    <constraint firstAttribute="bottom" secondItem="fKM-22-jHs" secondAttribute="bottom" constant="8" id="aFb-xe-woI"/>
+                                    <constraint firstAttribute="bottom" secondItem="fKM-22-jHs" secondAttribute="bottom" constant="8" id="aJd-Gw-0is"/>
+                                    <constraint firstItem="p03-Un-THV" firstAttribute="top" secondItem="jez-UG-Sb3" secondAttribute="topMargin" id="cDX-uD-yBA"/>
+                                    <constraint firstItem="fKM-22-jHs" firstAttribute="top" secondItem="p03-Un-THV" secondAttribute="bottom" constant="8" symbolic="YES" id="cQk-QI-6bS"/>
+                                    <constraint firstItem="p03-Un-THV" firstAttribute="top" secondItem="jez-UG-Sb3" secondAttribute="top" constant="8" id="hLh-pR-XOE"/>
+                                    <constraint firstItem="fKM-22-jHs" firstAttribute="centerX" secondItem="jez-UG-Sb3" secondAttribute="centerX" id="lJq-1c-ckQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="fKM-22-jHs" secondAttribute="trailing" constant="23" id="nbw-Iq-7MD"/>
+                                    <constraint firstItem="fKM-22-jHs" firstAttribute="top" secondItem="p03-Un-THV" secondAttribute="bottom" constant="8" id="vNm-FV-Jf3"/>
+                                    <constraint firstAttribute="trailing" secondItem="p03-Un-THV" secondAttribute="trailing" constant="23" id="wbp-UH-Und"/>
+                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzL-gg-mUq">
-                                <rect key="frame" x="277" y="334" width="46" height="30"/>
+                                <rect key="frame" x="274" y="383" width="46" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.31372549019607843" green="0.46666666666666667" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button">
@@ -60,11 +97,18 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jez-UG-Sb3" secondAttribute="trailing" id="F9n-EG-BTL"/>
+                            <constraint firstItem="edT-W6-AyS" firstAttribute="top" secondItem="x6r-Bc-hC1" secondAttribute="bottom" constant="70" id="NhP-ok-RpU"/>
+                            <constraint firstItem="jez-UG-Sb3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="j3z-Ir-l1S"/>
+                            <constraint firstItem="x6r-Bc-hC1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qRv-LA-1pg"/>
+                            <constraint firstItem="x6r-Bc-hC1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tGG-f8-6mD"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-425" y="-213"/>
+            <point key="canvasLocation" x="-361" y="-245"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="aVN-4a-5ym">
@@ -84,7 +128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6kV-lt-gDo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="614" y="656"/>
+            <point key="canvasLocation" x="448" y="798"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="PRf-m1-Emz">
@@ -104,7 +148,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EVT-iq-w8s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="572" y="-85"/>
+            <point key="canvasLocation" x="448" y="78"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="sLp-ko-Unc">
@@ -123,7 +167,10 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cta-WV-58k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-109" y="476"/>
+            <point key="canvasLocation" x="-287" y="470"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo_oficial_gray" width="259" height="263"/>
+    </resources>
 </document>
