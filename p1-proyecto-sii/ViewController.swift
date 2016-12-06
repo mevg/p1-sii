@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var txtNoContol: UITextField!
+    @IBOutlet weak var txtNip: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,10 +22,37 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func doLogin(sender: AnyObject) {        
-        let dashViewController = self.storyboard?.instantiateViewControllerWithIdentifier("dash") as! DashViewController
+    @IBAction func doLogin(sender: AnyObject) {
         
-        self.navigationController?.pushViewController(dashViewController, animated: true)
+        let noControl = txtNoContol.text
+        let nip = txtNip.text
+        
+        if (noControl == "12550554"){
+            if (nip == "5197"){
+                let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                
+                let dashViewController = storyBoard.instantiateViewControllerWithIdentifier("dashboard") as! DashViewController
+                self.presentViewController(dashViewController, animated:true, completion:nil)
+            }
+            let alerta = UIAlertController(title: "Datos Incorrectos",
+                message: "NIP incorrecto",
+                preferredStyle: .Alert)
+            
+            let action = UIAlertAction(title: "ok", style: .Destructive, handler: nil)
+            
+            alerta.addAction(action)
+            
+            presentViewController(alerta, animated: true, completion: nil)
+        }
+        let alerta = UIAlertController(title: "Datos Incorrectos",
+            message: "No. de Control Incorrecto",
+            preferredStyle: .Alert)
+        
+        let action = UIAlertAction(title: "ok", style: .Destructive, handler: nil)
+        
+        alerta.addAction(action)
+        
+        presentViewController(alerta, animated: true, completion: nil)
     }
 
 }
