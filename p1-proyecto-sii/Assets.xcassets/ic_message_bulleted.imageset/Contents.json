@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "15310447_1367291176637109_267768752_n.png.jpeg",
+      "filename" : "ic_message_bulleted@2x.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "ic_message_bulleted@3x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "ic_message_bulleted.png",
       "scale" : "3x"
     }
   ],

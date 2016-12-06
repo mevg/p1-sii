@@ -31,8 +31,8 @@ class ViewController: UIViewController {
             if (nip == "5197"){
                 let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
                 
-                let dashViewController = storyBoard.instantiateViewControllerWithIdentifier("dashboard") as! DashViewController
-                self.presentViewController(dashViewController, animated:true, completion:nil)
+                let avisosViewController = storyBoard.instantiateViewControllerWithIdentifier("tabbar") as! UITabBarController
+                self.presentViewController(avisosViewController, animated:true, completion:nil)
             }
             let alerta = UIAlertController(title: "Datos Incorrectos",
                 message: "NIP incorrecto",

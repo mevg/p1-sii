@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A277D0AB1DF770D2005355EA /* AvisosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A277D0AA1DF770D2005355EA /* AvisosViewController.swift */; };
+		A277D0AD1DF77107005355EA /* KardexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A277D0AC1DF77107005355EA /* KardexViewController.swift */; };
+		A277D0AF1DF7712C005355EA /* HorariosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A277D0AE1DF7712C005355EA /* HorariosViewController.swift */; };
+		A277D0B11DF77150005355EA /* ReticulaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A277D0B01DF77150005355EA /* ReticulaViewController.swift */; };
+		A277D0B31DF7715A005355EA /* ParcialesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A277D0B21DF7715A005355EA /* ParcialesViewController.swift */; };
 		A29E63F61DF731F100C6DBF6 /* DashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29E63F51DF731F100C6DBF6 /* DashViewController.swift */; };
 		A2A8BD5E1DEF681B0011A070 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A8BD5D1DEF681B0011A070 /* AppDelegate.swift */; };
 		A2A8BD601DEF681B0011A070 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A8BD5F1DEF681B0011A070 /* ViewController.swift */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A277D0AA1DF770D2005355EA /* AvisosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvisosViewController.swift; sourceTree = "<group>"; };
+		A277D0AC1DF77107005355EA /* KardexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KardexViewController.swift; sourceTree = "<group>"; };
+		A277D0AE1DF7712C005355EA /* HorariosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorariosViewController.swift; sourceTree = "<group>"; };
+		A277D0B01DF77150005355EA /* ReticulaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReticulaViewController.swift; sourceTree = "<group>"; };
+		A277D0B21DF7715A005355EA /* ParcialesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParcialesViewController.swift; sourceTree = "<group>"; };
 		A29E63F51DF731F100C6DBF6 /* DashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashViewController.swift; sourceTree = "<group>"; };
 		A2A8BD5A1DEF681B0011A070 /* p1-proyecto-sii.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "p1-proyecto-sii.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A8BD5D1DEF681B0011A070 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +73,11 @@
 				A2A8BD661DEF681B0011A070 /* LaunchScreen.storyboard */,
 				A2A8BD691DEF681B0011A070 /* Info.plist */,
 				A29E63F51DF731F100C6DBF6 /* DashViewController.swift */,
+				A277D0AA1DF770D2005355EA /* AvisosViewController.swift */,
+				A277D0AC1DF77107005355EA /* KardexViewController.swift */,
+				A277D0AE1DF7712C005355EA /* HorariosViewController.swift */,
+				A277D0B01DF77150005355EA /* ReticulaViewController.swift */,
+				A277D0B21DF7715A005355EA /* ParcialesViewController.swift */,
 			);
 			path = "p1-proyecto-sii";
 			sourceTree = "<group>";
@@ -139,7 +154,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2A8BD601DEF681B0011A070 /* ViewController.swift in Sources */,
+				A277D0B11DF77150005355EA /* ReticulaViewController.swift in Sources */,
+				A277D0AB1DF770D2005355EA /* AvisosViewController.swift in Sources */,
+				A277D0B31DF7715A005355EA /* ParcialesViewController.swift in Sources */,
 				A29E63F61DF731F100C6DBF6 /* DashViewController.swift in Sources */,
+				A277D0AF1DF7712C005355EA /* HorariosViewController.swift in Sources */,
+				A277D0AD1DF77107005355EA /* KardexViewController.swift in Sources */,
 				A2A8BD5E1DEF681B0011A070 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
