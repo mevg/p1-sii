@@ -8,8 +8,10 @@
 
 import UIKit
 
-class ReticulaViewController: UIViewController {
+class ReticulaViewController: UIViewController{
 
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +23,6 @@ class ReticulaViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 
