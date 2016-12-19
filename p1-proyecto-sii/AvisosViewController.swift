@@ -15,6 +15,12 @@ class AvisosViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    @IBAction func log_out(sender: AnyObject) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            
+        let loginViewController = storyBoard.instantiateViewControllerWithIdentifier("login") as! UIViewController
+        self.presentViewController(loginViewController, animated:true, completion:nil)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
